@@ -1,14 +1,8 @@
-// Driver code 
-#include <iostream> 
-
-// function to print average of an array
-extern int count(int array[], int n); 
-
-int main() 
-{ 
-    int array[] = {17, 4, 2, 8, 7}; 
-    int n = sizeof(array)/sizeof(array[0]); 
-  
-    std::cout << "The number of elements in array" << count(array, n);
-    return 0; 
-} 
+#include <iostream>
+extern void cpyia(int old_array[],int new_array[],int length);
+    
+int main() {
+    int array_one[5]={1,2,3,4,5};
+    int array_two[5];
+    cpyia(array_one, array_two,5);
+}

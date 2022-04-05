@@ -1,54 +1,37 @@
-#include <iostream>
 #include <vector>
-#include <stdio.h>  
-#include <algorithm>
-#include <sstream>   
-using namespace std;
-#include "MapGeneric.cpp"
-#include "MapTriple.cpp"
-#include "MapAbsoluteValue.cpp"
-#include "MapSquare.cpp"
-#include "FilterGeneric.cpp"
-#include "FilterEven.cpp"
-#include "FilterPositive.cpp"
-#include "FilterPositiveTwoDigit.cpp"
-#include "ReduceGeneric.cpp"
-#include "ReduceMinimum.cpp"
-#include "ReduceGCD.cpp"
+#include "function-1-1.h"
+
+constexpr int MAX_MEERKATS = 30;
 
 int main()
 {
-   vector<int> L,L1,L2;
-   int i;
-   string line;
-getline(cin,line);
-   if(line.size() == 0)
-       return 0;
+    std::vector<Meerkat> meerkat;
 
-line.erase(remove(line.begin(), line.end(), ','), line.end());
-istringstream s(line);
-while(s>>i)
-{
-     L.push_back(i);
+    for( int i = 0 ; i < MAX_MEERKATS ; i++ ) {
+        Meerkat MEERKAT{};
+
+        MEERKAT.setName();
+        MEERKAT.setAge();
+
+        meerkat.push_back( MEERKAT );
+    }
 }
-   if(L.size() != 20)
-           return 0;  
 
-   MapTriple triple;   MapAbsoluteValue abs;
-   L1 = triple.map(abs.map(L));
+#include <vector>
+#include "Person.h"
 
-   FilterEven even; FilterPositiveTwoDigit p2;
-  
-   L2 = p2.filter(L1);
-   if(L2.size() <2)
-           return 0;
+constexpr int MAX_PERSONS = 30;
 
-   L2 = even.filter(L2);
-   if(L2.size() <2)
-           return 0;  
-           
-   ReduceMinimum min; ReduceGCD gcd;
-   printf("%d %d\n",min.reduce(L2),gcd.reduce(L2));
+int main()
+{
+    std::vector<Person> people;
 
-  
+    for( int i = 0 ; i < MAX_PERSONS ; i++ ) {
+        Person PERSON{};
+
+        PERSON.setName();
+        PERSON.setAge();
+
+        people.push_back( PERSON );
+    }
 }

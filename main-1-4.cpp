@@ -1,15 +1,8 @@
-// Driver code 
-#include <iostream>
+#include <iostream> 
+extern void cpyda(double *old_array,double *new_array,int length);
 
-// function to print sum of elements
-// in an array of size n
-extern int sumtwo(int array[], int secondarray[], int n);
-
-int main()  
-{  
-    int array[] = {10};
-    int secondarray[] = {15};
-    int n = sizeof(array) / sizeof(array[0]);
-    std::cout << "Sum of given arrays are " << sumtwo(array, secondarray, n);
-    return 0;  
-}  
+int main() {
+    double old_array[3]={1,2,3};
+    double new_array[3];
+    cpyda(old_array,new_array,3);
+}

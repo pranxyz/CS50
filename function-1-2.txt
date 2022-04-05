@@ -1,0 +1,2 @@
+What does that number represent?
+the number represents the size of the memory location occupied by variables.

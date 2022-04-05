@@ -1,17 +1,12 @@
-// C++ Program to find sum of elements  
-// in a given array 
-#include <iostream>
+#include <iostream> 
 using namespace std; 
-  
-// function to return sum of elements  
-// in an array of size n  
-int sumtwo(int array[], int secondarray[], int n)
-{  
-    int sumtwo = 0; // initialize sum  
-  
-    // add them to sum  
-    for (int i = 0; i < n; i++)  
-    sumtwo = (array[i]) + (secondarray[i]);
-    
-    return sumtwo;
-}  
+
+void cpyda(double *old_array,double *new_array,int length) {
+    double *ptr1, *ptr2;
+    ptr1 = old_array;
+    ptr2 = new_array;
+    for (double *ptr1=old_array, *ptr2=new_array, i=0;i<length;ptr1++,ptr2++,i++) {
+        *ptr2 = *ptr1;
+        cout << *ptr2 << endl;
+    }
+}

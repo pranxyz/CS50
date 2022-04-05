@@ -1,0 +1,2 @@
+What do you think line 4 will do? Write the answer in plain English and be prepared to discuss with your workshop supervisor. 
+line 4 will multiple an array to memory location 3. 

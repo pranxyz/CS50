@@ -1,0 +1,12 @@
+
+1. What is the purpose of the log message you supply to your svn commit?
+   I think it is just a brief message defining the action being done. 
+
+2. What do you think makes a good commit message?
+   A good commit message is normally short, clear and well worded. 
+  
+3. When and how often should I be committing my work?
+   Everytime when you are done editing a file or when u create new folders/files.  
+
+4. True or False, you should commit all files (including binaries, images, and log files) to SVN.
+   True

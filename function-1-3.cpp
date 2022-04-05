@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std; 
 
-int count(int array[], int n)
-{
-  int count = 0;     
-  for (int i=0; i<n; i++)     
-  count++;
-  
-  return count; 
+void cpyia(int old_array[],int new_array[],int length) {
+    int *ptr1 = old_array;
+    int *ptr2 = new_array;
+    for(int i=0;i<length;i++) {
+        *(ptr2+i) = *(ptr1+i);
+        cout << *(ptr2+i) << endl;
+    }
 }

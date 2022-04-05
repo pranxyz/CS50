@@ -1,14 +1,18 @@
-// Driver code 
-#include <iostream> 
+#include <vector>
+#include "Person.h"
 
-// function to print average of an array
-extern int average(int array[], int n); 
+constexpr int MAX_PERSONS = 30;
 
-int main() 
-{ 
-    int array[] = {17, 4, 2, 8, 7}; 
-    int n = sizeof(array)/sizeof(array[0]); 
-  
-    std::cout << "Average of given array is " << average(array, n);
-    return 0; 
-} 
+int main()
+{
+    std::vector<Person> people;
+
+    for( int i = 0 ; i < MAX_PERSONS ; i++ ) {
+        Person PERSON{};
+
+        PERSON.setName();
+        PERSON.setAge();
+
+        people.push_back( PERSON );
+    }
+}
