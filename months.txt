@@ -1,0 +1,5 @@
+months.c
+input:         output:                         expected:
+6              6 is the month: Jun             jun
+89             89 is the month: wrong input    wrong input
+9              9 is the month: Sep             sep

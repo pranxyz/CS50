@@ -1,0 +1,22 @@
+err1.c
+output:                    expected:
+hello world                hello world
+
+err2.c 
+output:                    expected:
+enter a number: 12      
+you entered: 12            12 
+enter a number: -9
+you entered: -9            -9    
+enter a number: 4.789 
+you entered: 4             4.789 (but didn't print out the decimal because it is int not float data type)
+
+
+err3.c
+output:                                                 expected: 
+enter a number and I'll double it: 6                    
+twice 6 is 12                                           12
+enter a number and I'll double it: -9 
+twice -9 is -18                                         -18   
+enter a number and I'll double it: 4.5 
+twice 4 is 8                                            9(due to wrong data type)   

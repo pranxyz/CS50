@@ -1,0 +1,5 @@
+temp.c
+input:                 output:                                expected:
+0                      0 degree Celsius is 32 Fahrenheit      32 Fahrenheit 
+-32                    -32 degree Celsius is -25 Fahrenheit   -25 Fahrenheit 
+2/2                    2 degree Celsius is 35 Fahrenheit      33 Fahrenheit (meant to convert 1 degree not 2 due to wrong data type)

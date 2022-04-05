@@ -1,0 +1,8 @@
+to_uppercase2.c
+input                       output  
+Jennifer                    JENNIFER
+joe,smitH                   JOE,SMITH
+ProgramminG                 PROGRAMMING
+computerscienceprogramming  "you entered more than 20 characters"
+
+all outputs were expected

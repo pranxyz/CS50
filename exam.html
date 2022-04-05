@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="exam.css">
+        <script type="text/javascript" src="exam.js"></script>
+    </head>
+    
+    <body>
+        
+        <h2>Select a search filters:</h2>
+        
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all filters</button>
+            <button class="btn" onclick="filterSelection('genre')"> Genre</button>
+            <button class="btn" onclick="filterSelection('features')"> Features</button>
+            <button class="btn" onclick="filterSelection('platform')"> Platform</button>
+        </div>
+    
+        <div class="container">
+            <div id="main1" class="filterDiv genre" onclick="bmenu1()">Action</div>
+            <div id="main2" class="filterDiv genre" onclick="bmenu2()">Role-playing</div>
+            <div id="main3" class="filterDiv genre" onclick="bmenu3()">Strategy</div>
+            <div id="main4" class="filterDiv features" onclick="bmenu4()">Single-player</div>
+            <div id="main5" class="filterDiv features" onclick="bmenu5()">Multi-player</div>
+            <div id="main6" class="filterDiv platform" onclick="bmenu6()">PC</div>
+            <div id="main7" class="filterDiv platform" onclick="bmenu7()">Console</div>
+        </div>
+        
+        <div id= "menu1" class="filterDiv genre" style="display:none;">
+            <button class="right" onclick="bback1()">close</button>
+            <p> (refer to action games as the dot point and number as price) I have only implemented sort for only this section as example to show how I would implement price filter. </p>
+            <button onclick="sortList1()">LowestPrice</button>
+            
+            <ul id="id01">
+                <li>40</li>
+                <li>100</li> 
+                <li>20</li>
+            </ul>
+        </div>
+        
+        <div id= "menu2" class="filterDiv genre" style="display:none;">
+            <button class="right" onclick="bback2()">close</button>
+            <p> role-playing games get shown here </p>
+        </div>
+        
+        <div id= "menu3" class="filterDiv genre" style="display:none;">
+            <button class="right" onclick="bback3()">close</button>
+            <p> strategy games get shown here </p>
+        </div>
+        
+        <div id= "menu4" class="filterDiv features" style="display:none;">
+            <button class="right" onclick="bback4()">close</button>
+            <p> single-player games get shown here </p>
+        </div>
+        
+        <div id= "menu5" class="filterDiv features" style="display:none;">
+            <button class="right" onclick="bback5()">close</button>
+            <p> multi-player games get shown here </p>
+        </div>
+        
+        <div id= "menu6" class="filterDiv platform" style="display:none;">
+            <button class="right" onclick="bback6()">close</button>
+            <p> PC games get shown here </p>
+        </div>
+        
+        <div id= "menu7" class="filterDiv platform" style="display:none;">
+            <button class="right" onclick="bback7()">close</button>
+            <p> Console games get shown here </p>
+        </div>
+    </body>
+</html>

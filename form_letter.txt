@@ -1,0 +1,4 @@
+form_letter.c
+input:            output:                                                                              expected:
+ben 20 0.5        Your name is ben, you are 20 year old and your employment fraction is 0.5.           Your name is ben, you are 20 year old and your employment fraction is 0.5.
+sam 35 0.1        Your name is sam, you are 35 year old and your employment fraction is 0.1.           Your name is sam, you are 35 year old and your employment fraction is 0.1.  

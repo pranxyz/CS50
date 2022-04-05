@@ -1,0 +1,5 @@
+education.c
+input:                 output:                      expected:
+7                      Primary level education      primary
+8                      Secondary level education    secondary
+18                     Tertiary level education     tertiary

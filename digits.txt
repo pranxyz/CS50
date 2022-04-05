@@ -1,0 +1,10 @@
+digits.c
+input:                 output:           expected:
+709                    9                 9                          
+                       0                 0
+                       7                 7
+9009                   9                 9                          
+                       0                 0
+                       0                 0
+                       9                 9
+I did try -9008 but it printed -9 and -8 when printing in seperate lines. 
