@@ -1,0 +1,140 @@
+h1 {
+   font-family: "Raleway", sans-serif;
+}
+p {
+   font-family: "Noto Serif", serif;
+}
+h2 {
+   font-family: "Raleway", sans-serif;
+   text-align: left;
+}
+mark {
+  background-color: pink;
+  color: darkblue;
+}
+a {
+  color:darkgreen
+}
+del {
+    color: grey;
+}
+pre {
+    font-family: monospace;
+}
+h3 {
+  color: rgba(0, 0, 195, 0.8);
+}
+.transparent-text{
+  color: rgba(0, 0, 0, 0.5);
+}
+html { 
+  background: url('cross.png');
+  background-repeat: repeat;
+  background-color: rgba(220, 245, 245);
+}
+#content {
+  border-style: solid;
+  border-color: darkgrey;
+  border-radius: 1px;
+  background: white;
+}
+.blue {
+    color: blue;
+}
+.fancy {
+    font-family: cursive;
+}
+
+.red-border {
+  border-style: solid;
+  border-color: red;
+}
+
+.red-outline {
+  outline-color: red;
+  outline-style: solid;
+}
+.div1 {
+  border-style: solid;
+  border-color: red;
+}
+
+.div2 {
+  border-style: solid;
+  border-color: blue;
+}
+.div3 { 
+  border-style: solid;  
+  border-color: red;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 0px;
+}
+.div4 {
+  border-style: solid;  
+  border-color: blue;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.out1Div {
+  background-color: blue;
+  border: 1px solid red;
+}
+.in1Div {
+  background-color: yellow;
+  border: 1px solid red;
+  margin-left: 20px;
+  margin-right: 20px; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 12px;
+  text-align: right;
+}
+.out2Div { 
+  background-color: blue;
+  border: 1px solid red;
+  margin-top: 20px;
+}
+.in2Div {
+  margin: auto;
+  background-color: yellow;
+  border: 1px solid red;
+  padding: 12px;
+  height: 400px;
+  width: 400px;
+  text-align: right;
+}
+blockquote {
+  font-family: "Raleway", serif;    
+  color: dimgrey; 
+  line-height: 1.5;
+  word-spacing: 0.2em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+h4 {
+  font-family: "Raleway", sans-serif;    
+  font-style: italic;
+  font-weight: normal;
+  
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  padding: 10px;
+  color: rgba(191, 207, 212);
+}
+fab fa-facebook-f {
+  color: rgba(191, 207, 212); 
+  font-size:24px ;
+}
+fab fa-twitter {
+    color: rgba(191, 207, 212); 
+  font-size:24px ;
+}
+fas fa-share-alt{
+    color: rgba(191, 207, 212); 
+  font-size:24px ;
+}

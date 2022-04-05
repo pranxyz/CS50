@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  
+<title>task1-1</title>
+<meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto-Serif">
+<style>
+html { 
+  background: url('cross.png');
+  background-repeat: repeat;
+  background-color: rgba(220, 245, 245);
+}
+.mainDiv {
+  background-color:white;
+  border-style: solid; 
+  border-radius: 8px;
+  border-color: darkgrey;
+}
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+p {
+  font-family: "Noto Serif", serif;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+  color: darkgrey;
+  text-shadow: lightgrey;
+}
+
+</style>
+</head>
+<body>
+
+<div class="mainDiv">
+    <h1 style="padding: 10px;" >Listomania</h1>
+    <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: darkgrey;">
+      <li style="float: left;"><a class="active" href="#a-horizontal">A Horizontal</a></li>
+      <li style="float: left;"><a href="#list-menu">List Menu</a></li>
+      <li style="float: left;"><a href="#white-on-darkgrey">White On Darkgrey</a></li>
+      <li style="float: left;"><a href="#darkgrey-with-lightgrey-shadow">Darkgrey With Lightgrey Shadow</a>
+      </li>
+    </ul>
+    <ol>
+  <li>An numbered list</li>
+  <li>Containing</li>
+      <ul  style="list-style-type:square;">
+      <li>A dotted list</li>
+      <li>Containing</li>
+          <ol type="i">
+          <li>A roman numeral list</li>
+          <li>And some items</li>
+          <li>Like this</li>
+          </ol>
+      <li>And some items</li>
+      <li>Like this</li>
+      </ul>  
+  <li>And subsequent nested lists</li>
+        <ul  style="list-style-type:square;">
+      <li>Like this</li>
+          <ol type="i">
+          <li>are also automatically styled the same</li>
+          </ol></ul>
+ <ul><li>Like this</li> </ul>
+</ol>  
+</div>
+</body>
+</html>

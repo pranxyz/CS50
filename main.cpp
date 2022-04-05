@@ -1,37 +1,48 @@
-#include <vector>
-#include "function-1-1.h"
-
-constexpr int MAX_MEERKATS = 30;
 
 int main()
 {
-    std::vector<Meerkat> meerkat;
-
-    for( int i = 0 ; i < MAX_MEERKATS ; i++ ) {
-        Meerkat MEERKAT{};
-
-        MEERKAT.setName();
-        MEERKAT.setAge();
-
-        meerkat.push_back( MEERKAT );
-    }
+    struct Node *start = newNode(10);
+    start->next = newNode(12);
+    start->next->next = newNode(11);
+    start->next->next->next = newNode(11);
+    start->next->next->next->next = newNode(12);
+    start->next->next->next->next->next =
+                                    newNode(11);
+    start->next->next->next->next->next->next =
+                                    newNode(10);
+ 
+    printf("Linked list before removing duplicates ");
+    printList(start);
+ 
+    removeDuplicates(start);
+ 
+    printf("\nLinked list after removing duplicates ");
+    printList(start);
+ 
+    return 0;
 }
 
-#include <vector>
-#include "Person.h"
 
-constexpr int MAX_PERSONS = 30;
-
-int main()
+int main ()
 {
-    std::vector<Person> people;
-
-    for( int i = 0 ; i < MAX_PERSONS ; i++ ) {
-        Person PERSON{};
-
-        PERSON.setName();
-        PERSON.setAge();
-
-        people.push_back( PERSON );
-    }
+  HumanPlayer *player1 = new HumanPlayer();
+  ComputerPlayer *player2 = new ComputerPlayer();
+  Referee referee;
+  
+  char result = referee.refGame(player1, player2);
+  std::cout << result << std::endl;
+  
+  result = referee.refGame(player1, player2);
+  std::cout << result << std::endl;
+  
+  result = referee.refGame(player1, player2);
+  std::cout << result << std::endl;
+  
+  result = referee.refGame(player1, player2);
+  std::cout << result << std::endl;
+  
+  result = referee.refGame(player1, player2);
+  std::cout << result << std::endl;
+  
+  return 0;
 }
